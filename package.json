@@ -1,7 +1,7 @@
 {
   "name": "highlights-tokens",
   "version": "1.0.0",
-  "description": "A list of all the language tokens use by Atom's highlights lib",
+  "description": "A list of the language tokens used by the Atom.app [highlights](https://www.npmjs.com/package/highlights) syntax highlighter",
   "main": "index.js",
   "scripts": {
     "test": "tap test/*.js",
