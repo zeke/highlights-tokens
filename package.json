@@ -2,7 +2,7 @@
   "name": "highlights-tokens",
   "version": "1.0.0",
   "description": "A list of the language tokens used by the Atom.app [highlights](https://www.npmjs.com/package/highlights) syntax highlighter",
-  "main": "index.js",
+  "main": "index.json",
   "scripts": {
     "test": "tap test/*.js",
     "build": "node build.js"
@@ -23,11 +23,9 @@
     "url": "https://github.com/zeke/highlights-tokens/issues"
   },
   "homepage": "https://github.com/zeke/highlights-tokens",
-  "dependencies": {
+  "devDependencies": {
+    "tap": "^0.5.0",
     "highlights": "^0.16.0",
     "lodash": "^3.0.0"
-  },
-  "devDependencies": {
-    "tap": "^0.5.0"
   }
 }

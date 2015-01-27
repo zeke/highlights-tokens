@@ -1,4 +1,5 @@
 var grammars = require("./node_modules/highlights/gen/grammars")
+var fs = require("fs")
 var _ = require("lodash")
 var compact = _.compact
 var flatten = _.flatten
@@ -22,6 +23,6 @@ tokens = uniq(compact(flatten(tokens)))
     return a.toLowerCase().localeCompare(b.toLowerCase())
   })
 
-module.exports = tokens
+fs.writeFileSync("./index.json", JSON.stringify(tokens, null, 2)) 
 
-console.log(tokens)
+console.log("wrote index.json")
